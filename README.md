@@ -1,6 +1,6 @@
-# Vue.js playground
+# Express + Pug web server.
 
-A place for me to tinker with vue.js. 
+Basic nodejs webserver using express for routing and pug for html templating. 
 
 ---
 
