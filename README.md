@@ -1,11 +1,13 @@
 # Vue.js playground
 
-a place for me to tinker with vue.js
+A place for me to tinker with vue.js. 
 
 ---
 
 # Commands
 
-`$ gulp sass` 
+### Gulp commands
 
-compile css
+`$ gulp pug` compile pug files to html.
+
+`$ gulp sass` compile sass to css. 
