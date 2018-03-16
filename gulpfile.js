@@ -1,6 +1,7 @@
 'use strict';
  
 var gulp = require('gulp');
+var watch = require('gulp-watch');
 var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 
@@ -10,17 +11,24 @@ gulp.task('default', function() {
 });
  
 gulp.task('sass', function () {
-	return gulp.src('./client/sass/**/*.scss')
+	
+	return watch('client/sass/**/*.scss', function watchSass() {
+		gulp.src('client/sass/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest('./client/css'));
+	});
+	
 });
 
 
 gulp.task('pug', function buildHTML() {
-	return gulp.src('client/component/**/*.pug')
+	
+	return watch('client/component/**/*.pug', function watchPug() {
+		gulp.src('client/component/*.pug')
 		.pipe(pug({
 			verbose: true
-			// Your options in here. 
 		}))
 		.pipe(gulp.dest('client/component/'));
+	});
+	
 });
