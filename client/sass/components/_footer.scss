@@ -1,0 +1,13 @@
+#footer {
+	position: relative;
+	min-height: 40px;
+	background-color: darkgrey;
+	
+	#footer-copyright {
+		position: absolute;
+		bottom: 0;
+		height: 20px;
+		width: 100%;
+		background-color: black;
+	}
+}

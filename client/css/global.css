@@ -1,4 +1,15 @@
 #header {
   height: 40px;
   background-color: silver;
-  border-bottom: 3px solid #929292; }
+  box-shadow: 0px -7px 60px 0px #131313; }
+
+#footer {
+  position: relative;
+  min-height: 40px;
+  background-color: darkgrey; }
+  #footer #footer-copyright {
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background-color: black; }
