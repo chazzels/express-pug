@@ -8,4 +8,9 @@ server.listen(8420, '0.0.0.0', function httpServerListen() {
 	console.log("http server up");
 });
 
-app.use(express.static('client'));
+app.use("/css", express.static("client/css"));
+app.use("/js", express.static("client/js"));
+
+app.get("/", function(req, res) {
+	res.sendFile(__dirname + "/client/component/head/skelton.html");	
+});
