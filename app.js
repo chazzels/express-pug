@@ -12,5 +12,5 @@ app.use("/css", express.static("client/css"));
 app.use("/js", express.static("client/js"));
 
 app.get("/", function(req, res) {
-	res.sendFile(__dirname + "/client/component/head/skelton.html");	
+	res.sendFile(__dirname + "/client/component/skelton.html");	
 });
