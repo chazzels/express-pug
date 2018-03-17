@@ -296,3 +296,11 @@ template {
  */
 [hidden] {
   display: none; }
+
+body {
+  position: relative;
+  height: 100vh;
+  background-color: #efefef; }
+
+body {
+  font-family: 'Ubuntu', sans-serif; }

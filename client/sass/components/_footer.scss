@@ -1,13 +1,32 @@
+$footerHeight: 120px;
+
+// Color Declaration.
 #footer {
-	position: relative;
-	min-height: 40px;
-	background-color: darkgrey;
-	
-	#footer-copyright {
-		position: absolute;
-		bottom: 0;
-		height: 20px;
-		width: 100%;
-		background-color: black;
-	}
+	background-color: #dedede;
+}
+#footer-copyright {
+	color: #dedede;
+	background-color: #333;
+}
+
+// Structure
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	min-height: $footerHeight;
+
+}
+
+#footer-copyright {
+	position: absolute;
+	bottom: 0;
+	height: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+//reserve body space for footer. 
+body {
+	padding-bottom: $footerHeight;
 }
